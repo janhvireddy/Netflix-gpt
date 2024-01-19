@@ -10,7 +10,7 @@ import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { photo_URL } from "../utils/constants";
-import { bg_img } from "../utils/constants";
+import { BG_URL } from "../utils/constants";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -88,7 +88,7 @@ const Login = () => {
     <div className="relative">
       <Header />
       <div className="absolute bg-opacity-25 ">
-        <img src={bg_img} alt="bg-img"></img>
+        <img src={BG_URL} alt="bg-img"></img>
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
